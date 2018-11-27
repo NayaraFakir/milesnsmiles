@@ -13,30 +13,64 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
     <body>
-     <header>
-      <div class="header"></div>
-        <div id="navbar">
-          <a class="active" href="about.html">Home</a>
-            <a href="explore.html">Explore</a>
-              <a href="contact.html">Contact</a>
-        </div>
-      </header>
-        <div class="content">
-          <p> Intro </p>
-        </div>
-    <script>
-  window.onscroll = function() {myFunction()};
+      <style>
+        body {
+        background-color: #000000;
+          }
+        h2 {
+          color: white;
+        }
+        h3 {
+          color: white;
+          text-align: left;
+          padding-right: 10px;
+          margin: 30px;
 
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
+        h2 a {
+          color: white;
 
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-    </script>
-  </body>
-</html>
+        }
+        .welcome {
+          border: 1px solid white;
+          padding: 10px;
+          text-align: center;
+          margin: 20px;
+        }
+        hr{
+          height: 2px;
+        }
+
+      </style>
+      <body>
+  <!--header time-->
+        <header>
+          <div class="container">
+            <h1>MILES N SMILES</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solo.html">Solo</a></li>
+                <li><a href="couples.html">Couples</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+  <!--this is the contact us section-->
+  <div class="section">
+           <h3>Contact us</h3>
+           <hr>
+            <p>If you visit some of our recommended destinations, email us with your experiences and tells us about more interesting places we can talk about.
+              Also, if you have any queries do not exitate to ask!</p>
+           <form>
+               <input name="name" placeholder="Name" type="text" required /><br/>
+               <input name="email" placeholder="Email" type="email" required /><br/>
+               <textarea name="message" placeholder="Message" required ></textarea>
+               <input type="submit" value="SEND" class="submit" />
+           </form>
+       </div>
+</div>
+            <hr>
+            <p> add social media logo or copy righted @ or something that looks professional</p>
+      </body>
+  </html>
